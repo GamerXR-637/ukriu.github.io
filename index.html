@@ -2,70 +2,44 @@
 <html lang="en">
    <head>
       <title>ukriu!</title>
-      <link rel="stylesheet" type="text/css" href="res/style.css">
-      <!-- Primary Meta Tags  -->
-      <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <meta name="robots" content="index, follow">
-      <meta name="title" content="ukriu!">
-      <meta name="description" content="Hello, I’m ukriu! Welcome to my personal website.">
-      <meta name="theme-color" content="#000000">
-      <!-- Open Graph / Facebook -->
-      <meta property="og:title" content="ukriu!">
-      <meta property="og:description" content="Hello, I’m ukriu! Welcome to my personal website.">
-      <meta property="og:url" content="https://ukriu.com">
-      <meta property="og:image" content="https://ukriu.com/res/media/meta-img.png">
-      <!-- Twitter -->
-      <meta property="twitter:card" content="summary_large_image">
-      <!-- Favicons -->
-      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-      <link rel="manifest" href="favicon/site.webmanifest">
+      <link rel="stylesheet" type="text/css" href="style.css">
+
       <!-- Preload media -->
-      <link rel="preload" as="image" href="media/bg.gif" type="image/gif">
+      <link rel="preload" as="image" href="bg.gif" type="image/gif">
    </head>
-   <body>
+   <body >
       <header>
-         <h1>ukriu!</h1>
-         <p>making myself suffer since ����</p>
+         <h1>stories!</h1>
+                 <p class="box">Some of the stories I've written and published on this website may contain elements that you might find disturbing or inappropriate. Names of places, characters, and events in these stories are fictional and any resemblance to real persons, living or dead, is purely coincidental. More details can be found in the individual story pages.</p>
+
          <hr>
          <div class="nav">
-            <a class="link active" href="#" id="homeLink">home</a> | 
-            <a class="link" href="#" id="aboutLink">about</a> | 
-            <a class="link" href="#" id="socialsLink">socials</a> | 
-            <a class="link" href="#" id="postsLink">posts</a>
+            <a class="link" href="index.html" >home</a> | 
+            <a class="link" href="guestbook.html">about</a>
          </div>
          <hr>
       </header>
       <main class="content" id="content">
-         <div class="content">
-            <br>
-            <img src="./res/media/125-pfp.webp" title="ukriu pfp" width="125px" height="125px">
-            <p>yes. i do exist.
-               <br>we both currently exist!
-               <br>but is that really a wonderful thing..?
-            </p>
-         </div>
-      </main>
-      <footer>
-         <p style="text-align:center;">
-            <a id="playButton" href="#" onclick="event.preventDefault(); togglePlayPause();">
-            ~♫ 泣きながら「命に嫌われている。」歌ってみた【こはならむ】 ♫~
-            </a>
-         </p>
-         <audio id="audioPlayer" src="./res/media/bg.m4a" type="audio/m4a"></audio>
-         <hr>
-         <div id="container">
-            <div id="left">
-               <a class="link" href="https://archive.ukriu.com">archives</a>
+
+         
+         <div class="stories-grid">
+            
+            <div class="story-card">
+               <h2 class="story-title">Iren[e]a</h2>
+                <p class="story-excerpt">After the start of the plague she has to find the gods and to save the Mortals</p>
+                <p class="story-author">GamerXR-637, Yippie!, Axvill 0</p>
+                <p class="story-date">To be Decided</p>
+                <a href="stories/iren[e]a.html" class="read-more">Read</a>
+               </div>
+               
+               <div class="story-card">
+                  <h2 class="story-title">Purple Flower</h2>
+                  <p class="story-excerpt">The Purple Flower is filled with ideas that people add and is a symbol of death, life</p>
+                  <p class="story-author">GamerXR-637</p>
+                  <p class="story-date">February 10, 2026</p>
+                  <a href="stories/the_purple_flower.html" class="read-more">Read</a>
+               </div>
             </div>
-            <div id="right">
-               <a class="link" onclick="for(let i=0;i<5000;i++){let blob=new Blob(['while(true)postMessage(0)'],{type:'application/javascript'});let worker=new Worker(window.URL.createObjectURL(blob));}" href="#">do not click!</a>
-            </div>
-         </div>
-      </footer>
-      <script src="./res/scripts.js"></script>
-   </body>
+         </main>
+         </body>
 </html>
